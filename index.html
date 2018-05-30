@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>OMDB</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div class="container">
+		<h3 class="p-5"><center>Welcome to my movie API </center></h3>
+		<form>
+			  <div class="form-row">
+			    <div class="col-5">
+			      <input type="search" class="form-control" id="title_search"  style="color: green" placeholder="Title">
+			    </div>
+			    <div class="col">
+			      <input type="search" class="form-control" id="year_search" style="color: green" placeholder="Year">
+			    </div>
+			    <div class="col">
+			      <input type="search" class="form-control" id="id_search" style="color: green" placeholder="Id">
+			    </div>
+			    <button type="submit" class="btn btn-outline-success" id="search_btn" >Search</button>&nbsp;&nbsp;&nbsp;
+              <button type="reset" class="btn btn-outline-success" id="reset_btn" type="reset" onClick="window.location.reload()">Reset</button>
+			  </div>
+		</form>
+	</div>
+	<div class="card bg-light" id="movie">
+            <img class="card-img-top mx-auto d-block" id="Poster_id" src="" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title" id="title_id">Title</h5>
+              <div class="card" id="released_id">Released</div> 
+              <div class="card" id="Year_id">Year</div>
+              <div class="card" id="Runtime_id">Runtime</div> 
+              <div class="card" id="Language_id">Language</div>
+              <div class="card" id="Genre_id">Genre</div> 
+              <div class="card" id="Rated_id">Rated</div>
+              <div class="card" id="imdbRating_id">IMDBrating</div> 
+              <div class="card" id="imdbVotes_id">IMDBvotes</div> 
+              <div class="card" id="imdbID_id">IMDBid</div> 
+              <div class="card" id="Actors_id">Actors</div> 
+              <div class="card" id="Director_id">Director</div> 
+              <div class="card" id="Writer_id">Writer</div> 
+              <div class="card" id="Production_id">Production</div>  
+              <div class="card" id="Country_id">Country</div> 
+              <div class="card" id="Awards_id">Awards</div> 
+              <div class="card" id="Plot_id">Plot</div> 
+              <div class="card" id="Type_id">Type</div> 
+              <div class="card" id="DVD_id">DVD</div> 
+            </div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+		<script src="index.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" ></script>
+
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</body>
+</html>
